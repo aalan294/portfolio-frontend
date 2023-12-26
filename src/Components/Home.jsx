@@ -128,10 +128,11 @@ const Container = styled.div`
     }
   }
   @media only screen and (max-width: 767px){
-    margin-top: 3rem;
+    margin-top: 5rem;
     padding-top: 0;
-    height: 100vh;
+    height: 70vh;
     overflow-y:hidden;
+    position: unset;
     .text{
       width: 100%;
       margin-top: 0.5rem;
@@ -143,7 +144,7 @@ const Container = styled.div`
       width: 100%;
       justify-self: flex-end;
       margin-left: 6rem;
-      margin-bottom: 5rem;
+      margin-bottom: 200px;
       .pentagon{
         margin-bottom: 4rem;
         width: 200px;
@@ -157,8 +158,13 @@ const Container = styled.div`
       }
     }
     .links{
-      margin-top: 1rem;
-      left: 0;
+      padding:0;
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100vw;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 150px;
     }
   }
 `
