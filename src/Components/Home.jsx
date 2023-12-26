@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import profile from '../Assets/updated profile.jpg'
-import Typed from 'react-typed';
 
 const Home = () => {
   const handleResume = async()=>{
@@ -11,7 +10,7 @@ const Home = () => {
       <div className="text">
         <h1>Hi,</h1>
         <h1>I'm <span>Aalan</span></h1>
-        <h1><Typed className='type' strings={[ 'Web Developer','Coding Enthusiast','MERN Stack Developer']} typeSpeed={40} /></h1><br />
+        <h1>MERN Stack Developer{'</>'}</h1><br />
         <div className="buttons">
           <button>Contact</button>
           <button onClick={handleResume}>Resume<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#19ae8c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></button>
