@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const NavBar = () => {
   const handleResume = async()=>{
-    window.open('http://localhost:3500/resume','_blank')
+    window.open('https://portfolio-backend-jsog.onrender.com/resume','_blank')
   }
   return (
     <Container>
