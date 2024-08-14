@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import aboutImg from '../Assets/about.jpg'
+import aboutImg from '../Assets/profile.jpg'
 
 const AboutMe = () => {
   return (
@@ -11,10 +11,9 @@ const AboutMe = () => {
             <img src={aboutImg} alt="" />
           </div>
           <div className="about-text">
-              <p>Hello,<br/> I'm Aalan Sason Singarayan A, a second-year B.Tech student majoring in Computer Science and Engineering. Passionate about technology and innovation, I am actively honing my skills in web development, with a focus on the MERN stack. Aspiring to blend creativity with code, I'm excited to explore new possibilities and contribute to the world of digital experiences. Welcome to my portfolio, where I showcase my journey in the realm of web development.</p>
+          <p>Hello,<br/> I'm Aalan Sason Singarayan A, a B.Tech pre-final year Computer Science and Engineering student. I specialize in web development and blockchain technology, focusing on the MERN stack and decentralized apps. I'm passionate about blending creativity with code to contribute to digital experiences and blockchain innovations. Welcome to my portfolio, showcasing my journey in these fields.</p>
           </div>
-        </div>
-        <div id='skills'></div>
+          </div>
     </Container>
   )
 }

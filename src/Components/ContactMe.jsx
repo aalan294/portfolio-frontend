@@ -59,6 +59,7 @@ const Container = styled.div`
   gap: 3rem;
   margin-bottom:  5rem;
   h1{
+    margin-top: 5rem;
     justify-self: flex-start;
     border-bottom: 0.2rem solid rgb(25, 174, 140);
   }

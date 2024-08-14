@@ -12,9 +12,13 @@ const Main = () => {
     <Container>
         <NavBar />
         <Home />
+        <hr />
         <AboutMe />
+        <hr />
         <Skills />
+        <hr />
         <Projects />
+        <hr />
         <ContactMe />
     </Container>
   )
@@ -23,5 +27,14 @@ const Main = () => {
 const Container = styled.div`
   scroll-behavior: smooth;
   overflow-x: hidden;
+
+  hr {
+    width: 80%;
+    height: 1px;
+    border: none;
+    background-color: #999797; 
+    margin: 20px auto;
+  }
 `
+
 export default Main
