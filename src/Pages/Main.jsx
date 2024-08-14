@@ -10,12 +10,12 @@ import ContactMe from '../Components/ContactMe'
 const Main = () => {
   return (
     <Container>
-        <NavBar />
-        <Home />
+        <NavBar id='stick' />
+        <Home/>
         <hr />
         <AboutMe />
         <hr />
-        <Skills />
+        <Skills/>
         <hr />
         <Projects />
         <hr />
@@ -27,12 +27,16 @@ const Main = () => {
 const Container = styled.div`
   scroll-behavior: smooth;
   overflow-x: hidden;
+  #stick{
+    position: sticky;
+    top:0;
+  }
 
   hr {
     width: 80%;
     height: 1px;
     border: none;
-    background-color: #999797; 
+    background-color: #999797;
     margin: 20px auto;
   }
 `

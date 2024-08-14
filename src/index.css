@@ -12,6 +12,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* Global styles in your main CSS file or a styled-components GlobalStyle component */
+html {
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar{
   width: 0.2rem;
 }

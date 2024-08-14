@@ -5,7 +5,7 @@ import aboutImg from '../Assets/profile.jpg'
 const AboutMe = () => {
   return (
     <Container>
-        <h1>About Me</h1>
+        <h1 id='about'>About Me</h1>
         <div className="about">
           <div className="image">
             <img src={aboutImg} alt="" />
