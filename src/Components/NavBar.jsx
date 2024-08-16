@@ -1,6 +1,7 @@
 // NavBar.jsx
 import React from 'react';
 import styled from 'styled-components';
+import resume from '../Assets/Updated Resume ATS.pdf'
 
 const NavBar = () => {
   const handleScrollToSection = (id) => {
@@ -13,9 +14,6 @@ const NavBar = () => {
     }
   };
 
-  const handleResume = async () => {
-    window.open('https://portfolio-backend-jsog.onrender.com/resume', '_blank');
-  };
 
   return (
     <Container>
@@ -25,10 +23,11 @@ const NavBar = () => {
       <ul>
         <li><a onClick={() => handleScrollToSection('home')}>Home</a></li>
         <li><a onClick={() => handleScrollToSection('about')}>About Me</a></li>
+        <li><a onClick={() => handleScrollToSection('edu')}>Education & Experience</a></li>
         <li><a onClick={() => handleScrollToSection('skills')}>Skills</a></li>
         <li><a onClick={() => handleScrollToSection('projects')}>Projects</a></li>
         <li><a onClick={() => handleScrollToSection('contactme')}>Contact Me</a></li>
-        <li><button onClick={handleResume}>Resume<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#19ae8c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></button></li>
+        <li><button><a href={resume} download="AALAN SASON SINGARAYAN A" >Resume</a><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#19ae8c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></button></li>
       </ul>
     </Container>
   );
@@ -86,6 +85,17 @@ const Container = styled.div`
       }
 
       button {
+        a{
+          &:active {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+
+        &:hover {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+        }
         border: 1px solid #19ae8c;
         padding: 0.3rem 0.7rem;
         background-color: inherit;

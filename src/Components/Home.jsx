@@ -1,10 +1,8 @@
 import styled from 'styled-components'
 import profile from '../Assets/updated profile.jpg'
+import resume from '../Assets/Updated Resume ATS.pdf'
 
 const Home = () => {
-  const handleResume = async()=>{
-    window.open('https://portfolio-backend-jsog.onrender.com/resume','_blank')
-  }
   return (
     <Container id='home'>
       <div className="text">
@@ -13,7 +11,7 @@ const Home = () => {
         <h1>Associate Software Developer{'</>'}</h1><br />
         <div className="buttons">
           <button><a href="#contactme">Contact</a></button>
-          <button onClick={handleResume}>Resume<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#19ae8c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></button>
+          <button><a href={resume} download="AALAN SASON SINGARAYAN A" >Resume</a><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#19ae8c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></button>
         </div>
         
       </div>
@@ -61,6 +59,12 @@ const Container = styled.div`
     .buttons{
       display: flex;
       gap: 1rem;
+      button{
+        a{
+          text-decoration: none;
+          color: inherit;
+        }
+      }
       button:nth-of-type(1){
         a{
           text-decoration: none;
